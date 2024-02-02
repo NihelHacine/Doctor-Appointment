@@ -5,6 +5,7 @@ import Header from '../Shared/Header/Header'
 import img from '../../images/features/baby.png'
 import { Link } from 'react-router-dom'
 import doctorBg from '../../images/img/doctors-bg.jpg';
+import './Service.css'
 
 const Service = () => {
   const weArePleaseStyle = {
@@ -22,25 +23,37 @@ const Service = () => {
     <>
       <Header />
       <SubHeader title="Service" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing." />
-
+      <div class="body">
       <div class="container" style={{ marginTop: 200, marginBottom: 100 }}>
         <div class="row">
           {
             Array(6).fill(null).map((_item, id) => (
+              // <div class="col-lg-4 col-md-6 col-sm-6" key={id + 6}>
+              //   <div class="card shadow border-0 mb-5">
+              //     <img src={img} alt="" class="img-fluid" style={{ maxHeight: '17rem', objectFit: 'cover' }} />
+              //     <div class="p-2">
+              //       <h4 class="mt-4 mb-2">Child care</h4>
+              //       <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+              //     </div>
+              //   </div>
+              // </div>
               <div class="col-lg-4 col-md-6 col-sm-6" key={id + 6}>
-                <div class="card shadow border-0 mb-5">
-                  <img src={img} alt="" class="img-fluid" style={{ maxHeight: '17rem', objectFit: 'cover' }} />
-                  <div class="p-2">
-                    <h4 class="mt-4 mb-2">Child care</h4>
-                    <p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-                  </div>
+              <div className="card">
+              <div className="box">
+                <div className="content">
+                  {/* <h2>001</h2> */}
+                  <h3>Service title</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+                  <a href="#">Read More</a>
                 </div>
               </div>
+            </div>
+             </div>
             ))
           }
         </div>
       </div>
-
+      </div>
       <section style={weArePleaseStyle}>
         <div class="container" style={{
           position: 'absolute',

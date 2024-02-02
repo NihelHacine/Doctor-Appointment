@@ -33,7 +33,6 @@ import BlogDetails from './components/Blog/BlogDetails';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Service from './components/Service/Service';
-import Dashboard from './components/Doctor/Dashboard/dashboard';
 import AppointmentPage from './components/Appointment/AppointmentPage';
 import TrackAppointment from './components/TrackAppointment/TrackAppointment';
 
@@ -51,7 +50,7 @@ const router = createBrowserRouter([
   { path: '/doctors', element: <SearchDoctor /> },
   { path: '/doctors/profile/:id', element: <DoctorProfile /> },
 
-  { path: '/dashboard', element: <Dashboard /> },
+  // { path: '/dashboard', element: <Dashboard /> },
   { path: '/dashboard/my-patients', element: <MyPatients /> },
   { path: '/dashboard/reviews', element: <Reviews /> },
   { path: '/dashboard/schedule', element: <Schedule /> },
